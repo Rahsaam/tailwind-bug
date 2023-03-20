@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.navbarHover {
+    @apply relative inline-block ;
+  }
+  
+  .navbarHover::before {
+    content: "";
+    @apply absolute z-10 bottom-0 left-0 w-full h-px bg-green-500 transform transition-transform ease-in-out duration-250;
+  }
+  
+  .navbarHover:hover::before {
+    @apply scale-x-0;
+  } 
+
+
+  /* .navbarHover {
+    @apply before:block before:h-px before:w-full before:bg-red-500 before:absolute before:left-0 before:bottom-0 before:z-10 pb-1  relative inline-block 
+} */
